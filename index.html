@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='content/css/main.css'>
+    
+</head>
+<body>
+    <table width="100%" id="mainPlanning">
+        <tr>
+            <td width="80%">
+                <div>
+                    <table width="100%" class="planning-table">
+                        <thead>
+                            <tr>
+                                <button type="button" class="left-button calendar-button" id="leftButton">Prev</button>
+                                <button type="button" class="right-button calendar-button" id="rightButton">Next</button>
+                            </tr>
+                            <tr id="dateOfWeek">
+                            </tr>  
+                        </thead>
+                        <tbody style="overflow: scroll;">
+                            <tr class="planning-row-example">
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+            <td class="backlog">
+                <table id="Backlog"  class="backlog-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span style="text-align: center;">Backlog</span>
+                            </th>
+                        </tr>
+                        <tr id="TaskSearchString"  height="100%">
+                            <td  style="text-align: center;">
+                                <input type="text" style="width: 87%; height: 20px; float:left;" placeholder="Найти" id="searchString">
+                                <button type="button" style="width: 10%; height:100%; float:left;" id="taskSearchButton">
+                                    <img src="content/img/search.ico" alt="">
+                                </button>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody style="overflow: scroll">
+                        <tr class="backlog-task">
+                            <td>
+                                <ul id="taskList" class="tasks-list">
+                                    
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src='scripts/main.js'></script>

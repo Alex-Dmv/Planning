@@ -1,0 +1,279 @@
+.user {
+    background-color: forestgreen;
+    width: 16%;
+    color:rgb(255, 255, 255);
+    align-items: center;
+    border-color: silver;
+    border-style: solid;
+    border-collapse: collapse;
+    border-width: 0.5px;
+}
+
+.planning-row {
+    border-style: solid;
+    border-top: 1pt;
+    border-bottom: 1pt;
+    border-color: silver;
+    height: 20vh;
+}
+
+.planning-table {
+  table-layout: fixed;
+  border-width: 1px;
+  border-style: solid; 
+  border-color: silver;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.left-button {
+    float:left;
+}
+
+.right-button {
+    float:right;
+    
+}
+
+.calendar-button {
+    background-color: green;
+    /* border-radius: 5px; */
+    border-color: silver;
+    border-width: 0.7px;
+    color:rgb(255, 255, 255);
+    height: 30px;
+    width: 50px;
+}
+
+.backlog-table {
+    height: 100%;
+    width: 100%;
+}
+
+.backlog {
+    width: 20%;
+    vertical-align: top;
+    background-color: rgb(201, 193, 193);
+    opacity: 0.8;
+}
+
+.backlog-list-element {
+    text-align: left;
+}
+
+.task-example {
+    display: none;
+}
+
+.planning-row-example {
+    display: none;
+}
+
+#dateOfWeek th {
+  table-layout: fixed;
+  width: 12%;
+  height: 100%;
+  border-color: silver;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 0.5px;
+}
+
+td.tasks {
+    table-layout: fixed;
+    width: 12%;
+    height: 100%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: dotted;
+    border-color: silver;
+    /* border-style: solid; */
+    border-collapse: collapse;
+    border-width: 0.5px;
+}
+
+.task {
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: silver;
+    border-collapse: collapse;
+    border-width: 1px;
+    height: calc;
+    word-wrap: break-word;
+    height: 100%;
+    text-align: center;
+}
+
+
+.backlog-task {
+    /* background-color: silver; */
+    width: 100%;
+    
+}
+
+td.backlog-task {
+    min-height: 200px;
+}
+
+
+
+li.backlog-task {
+    /* padding-left: 10px; */
+    word-wrap: break-word;
+    min-height: 50px;
+    /* min-width: 250px; */
+    width: 98%;
+    background-color: rgb(233, 233, 233);
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.delete-button {
+  /* border-radius: 20px;
+  background-color: red;
+  color: white; */
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  /* margin: 20px auto; */
+  cursor: pointer;
+}
+
+.delete-button:before {
+  content: '+';
+  color: #337AB7;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg) scale(2);
+  /* font-size: 50px; */
+  /* line-height: 1; */
+  /* top: -5px; */
+  left: 3px;
+  /* transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85); */
+}
+
+.selected {
+    background-color: gold;
+    opacity: 0.6;
+    min-height: 50px;
+    /* min-width: 250px; */
+    width: 100%;
+}
+
+.selected-t {
+    background-color: lightgreen;
+}
+
+
+ul.tasks-list {
+    position:relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    border-collapse: collapse;
+    /* overflow: scroll; */
+    
+}
+
+[tooltip] {
+    /* margin: 20px 60px; */
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  [tooltip]::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+    z-index: 99;
+    opacity: 0;
+  }
+  
+  [tooltip-position='left']::before {
+    left: 0%;
+    top: 50%;
+    margin-left: -12px;
+    transform: translatey(-50%) rotate(-90deg)
+  }
+  
+  [tooltip-position='top']::before {
+    left: 50%;
+  }
+  
+  [tooltip-position='buttom']::before {
+    top: 100%;
+    margin-top: 8px;
+    transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+  }
+  
+  [tooltip-position='right']::before {
+    left: 100%;
+    top: 50%;
+    margin-left: 1px;
+    transform: translatey(-50%) rotate(90deg)
+  }
+  
+  [tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    transform: translateX(-50%) translateY(-100%);
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 4px 2px;
+    font-size: 12px;
+    min-width: 100px;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 4px 4px;
+    z-index: 99;
+    opacity: 0;
+  }
+  
+  [tooltip-position='left']::after {
+    left: 0%;
+    top: 50%;
+    margin-left: -8px;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  
+  [tooltip-position='top']::after {
+    left: 50%;
+  }
+  
+  [tooltip-position='buttom']::after {
+    top: 100%;
+    margin-top: 8px;
+    transform: translateX(-50%) translateY(0%);
+  }
+  
+  [tooltip-position='right']::after {
+    left: 100%;
+    top: 50%;
+    margin-left: 8px;
+    transform: translateX(0%) translateY(-50%);
+  }
+  
+  [tooltip]:hover::after,
+  [tooltip]:hover::before {
+    opacity: 1;
+    transition-delay: 1.0s;
+    transition: all 0.5s;
+  }
+  
+  .input {
+    margin-left: 135px
+  }
