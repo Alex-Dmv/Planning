@@ -2,11 +2,11 @@ const express = require('express');
 const fetch = require('node-fetch');
 
 const fs = require('fs');
-const user_api_url = 'https://varankin_dev.elma365.ru/api/extensions/2a38760e-083a-4dd0-aebc-78b570bfd3c7/script/users';
-const task_api_url = 'https://varankin_dev.elma365.ru/api/extensions/2a38760e-083a-4dd0-aebc-78b570bfd3c7/script/tasks';
+//const user_api_url = 'https://varankin_dev.elma365.ru/api/extensions/2a38760e-083a-4dd0-aebc-78b570bfd3c7/script/users';
+//const task_api_url = 'https://varankin_dev.elma365.ru/api/extensions/2a38760e-083a-4dd0-aebc-78b570bfd3c7/script/tasks';
 
-// const user_api_url = 'http://192.168.132.6/PlanningAPI/user/all';
-// const task_api_url = 'http://192.168.132.6/PlanningAPI/task/all';
+const user_api_url = 'http://192.168.132.6/PlanningAPI/user/all';
+const task_api_url = 'http://192.168.132.6/PlanningAPI/task/all';
 // const update_task_api_url = 'http://192.168.132.6/PlanningAPI/task/update';
 
 const host = "127.0.0.1";
